@@ -1,0 +1,75 @@
+﻿body {
+    background-color:#F3E2A9;   
+}
+
+#contenedor{
+    background-color:gray;
+    margin: 0 auto;
+    max-width: 980px;
+    min-width: 390px;
+    width:100%;
+}
+
+#encabezado{
+    background-image:url(../imgs/banner.jpg);
+    color: #0a6c0c;
+    font-size: 4em;
+    height: 130px;
+    width: 100%;
+}
+
+#pie{
+    background-color: gray;
+    color: white;
+    font-size: 1em;
+    height: 30px;
+    text-align: center;
+    width:100%;  
+}
+
+.principal{
+    background-color: gray;    
+    font-family: cambria, "Hoefler Text", "Liberation serif", Times, 'Times New Roman', serif;
+    font-size:18px;
+    font-style: oblique;
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 300px;
+    min-width: 370px;
+    padding: 10px;    
+    text-justify: distribute;
+    width: 80%;
+}
+.table-mode{
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 300px;
+    text-align: center;
+    width: 80%;
+}
+.log-content{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 250px;
+    width: 87%
+}
+.Menus{
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    margin: 0 auto;
+    max-width: 650px;
+    min-width: 300px;
+    width: 90%;	
+}
+.CONTENEDOR{
+    background-color: #036217; 
+    margin: 0 auto;
+    max-width: 400PX;
+    text-align: center;
+    min-width: 160PX; 
+    padding: 25PX;
+    width: 65%;
+}

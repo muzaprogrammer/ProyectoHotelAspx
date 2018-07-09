@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FLAT PLUS Template (v1.2.3)</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+	 
+	
+	<!-- 
+	**********************************************************
+	In development, use the LESS files and the less.js compiler
+	instead of the minified CSS loaded by default.
+	**********************************************************
+	-->
+
+		<!-- <link rel="stylesheet/less" href="../assets/less/docs/module.docs.page.index.component.tables-classic.less" /> -->
+
+	<link rel="stylesheet" href="../assets/css/docs/module.docs.page.index.component.tables-classic.min.css" />
+
+	
+	
+	<script src="../assets/components/library/jquery/jquery.min.js?v=v1.2.3"></script>
+<script src="../assets/components/library/jquery/jquery-migrate.min.js?v=v1.2.3"></script>
+<script src="../assets/components/library/modernizr/modernizr.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/less-js/less.min.js?v=v1.2.3"></script>
+<script src="../assets/components/modules/admin/charts/flot/assets/lib/excanvas.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/browser/ie/ie.prototype.polyfill.js?v=v1.2.3"></script>
+<script src="../assets/components/library/jquery-ui/js/jquery-ui.min.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js?v=v1.2.3"></script>
+<script src="../assets/components/library/angular/angular.min.js?v=v1.2.3"></script>
+</head>
+<body id="docs">
+<!-- Fixed navbar -->
+<div class="navbar navbar-default margin-none">
+  <!-- <div class="container"> -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">FLAT PLUS Documentation - t h e m e l o c k . c o m</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Core packages <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="component.core.minimal.html">Minimal</a></li>
+            <li><a href="component.core.html">Complete</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="../navbar/">Default</a></li>
+        <li><a href="../navbar-static-top/">Static top</a></li>
+        <li class="active"><a href="./">Fixed top</a></li>
+      </ul> -->
+    </div><!--/.nav-collapse -->
+  <!-- </div> -->
+</div>
+
+<div class="innerAll">
+<div class="widget widget-tabs">
+	<div class="widget-body">
+
+		<div class="row">
+			<div class="col-md-3" ng-app="App" ng-controller="ComponentsCtrl" ng-init="search = 'tables-classic'">
+				<input class="form-control" type="text" ng-model="search" placeholder="Search .." />
+				<tree collection="components" search="search"></tree>
+			</div>
+			<div class="col-md-9">
+										
+						<div class="jumbotron center">
+							<h1>component.tables-classic</h1>
+						</div>
+
+													<h4 class="separator bottom"><a href="#view-a423db146c064e69be97275754264dbb" data-toggle="collapse">tables-classic</a></h4>
+							<div class="collapse in" id="view-a423db146c064e69be97275754264dbb">
+								<div class="widget widget-tabs">
+									<div class="widget-head padding-none">
+										<ul>
+											<li class="active"><a href="#preview-a423db146c064e69be97275754264dbb" data-toggle="tab">Preview</a></li>
+											<li><a href="#source-a423db146c064e69be97275754264dbb" data-toggle="tab">Source</a></li>
+											<li><a href="#styles-a423db146c064e69be97275754264dbb" data-toggle="tab">Styles</a></li>											<li><a href="#scripts-a423db146c064e69be97275754264dbb" data-toggle="tab">Scripts</a></li>										</ul>
+										<a href="../docs/examples/tables-classic.html" target="_blank" class="pull-right btn btn-success">Live Example</a>
+									</div>
+									<div class="widget-body">
+										<div class="tab-content">
+											<div class="tab-pane active" id="preview-a423db146c064e69be97275754264dbb">
+												<h3>Classic Tables</h3>
+
+<!-- Widget -->
+<div class="widget widget-inverse">
+	
+	<!-- Widget heading -->
+	<div class="widget-head">
+		<h4 class="heading">Minimal Table</h4>
+	</div>
+	<!-- // Widget heading END -->
+	
+	<div class="widget-body">
+	
+		<!-- Table -->
+		<table class="table table-condensed">
+		
+			<!-- Table heading -->
+			<thead>
+				<tr>
+					<th class="center">No.</th>
+					<th>Name</th>
+					<th>Location</th>
+					<th>Position</th>
+					<th class="center">Rating</th>
+					<th class="center">Progress</th>
+					<th class="text-right">Action</th>
+				</tr>
+			</thead>
+			<!-- // Table heading END -->
+			
+			<!-- Table body -->
+			<tbody>
+				
+
+				<!-- Table row -->
+				<tr>
+					<td class="center">1</td>
+					<td> <img src="../assets//images/people/35/8.jpg" width="20" class="img-circle"/> <span >Adrian Demian</span></td>
+					<td>MI, USA </td>
+					<td>Senior UI Designer</td>
+					<td class="center"><div class="rating text-faded">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star active"></span>
+        <span class="star"></span>
+</div>  
+
+
+</td>
+					<td class="center innerLR">
+						<div class="progress progress-mini">
+							<div class="progress-bar progress-bar-primary" style="width: 75%;"></div>
+						</div>
+					</td>
+					<td class="text-right">
+						<div class="btn-group btn-group-xs ">
+							<a href="" class="btn btn-inverse"><i class="fa fa-pencil"></i></a>
+							<a href="" class="btn btn-danger"><i class="fa fa-times"></i></a>
+
+						</div>
+					</td>
+				</tr>
+				<!-- // Table row END -->
+
+			</tbody>
+			<!-- // Table body END -->
+			
+		</table>
+		<!-- // Table END -->
+		
+	</div>
+</div>
+<!-- // Widget END -->
+
+<!-- Widget -->
+<div class="widget widget-inverse">
+	
+	<!-- Widget heading -->
+	<div class="widget-head">
+		<h4 class="heading">Bordered Table</h4>
+	</div>
+	<!-- // Widget heading END -->
+	
+	<div class="widget-body" >
+	
+		<!-- Table -->
+		<table class="table table-bordered table-white">
+			
+			<!-- Table heading -->
+			<thead>
+				<tr>
+					<th class="center">No.</th>
+					<th>Name</th>
+					<th>Location</th>
+					<th>Position</th>
+					<th class="center">Rating</th>
+					<th class="center">Progress</th>
+					<th class="text-right">Action</th>
+				</tr>
+			</thead>
+			<!-- // Table heading END -->
+			
+			<!-- Table body -->
+			<tbody>
+				
+				
+				<!-- Table row -->
+				<tr>
+					<td class="center">1</td>
+					<td> <img src="../assets//images/people/35/8.jpg" width="20" class="img-circle"/> <span >Adrian Demian</span></td>
+					<td>MI, USA </td>
+					<td>Senior UI Designer</td>
+					<td class="center"><div class="rating text-faded">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star active"></span>
+        <span class="star"></span>
+</div>  
+
+
+</td>
+					<td class="center innerLR">
+						<div class="progress progress-mini">
+							<div class="progress-bar progress-bar-primary" style="width: 75%;"></div>
+						</div>
+					</td>
+					<td class="text-right">
+						<div class="btn-group btn-group-xs ">
+							<a href="" class="btn btn-inverse"><i class="fa fa-pencil"></i></a>
+							<a href="" class="btn btn-danger"><i class="fa fa-times"></i></a>
+
+						</div>
+					</td>
+				</tr>
+				<!-- // Table row END -->
+
+			</tbody>
+			<!-- // Table body END -->
+			
+		</table>
+		<!-- // Table END -->
+		
+	</div>
+</div>
+<!-- // Widget END -->
+
+<!-- Widget -->
+<div class="widget widget-inverse">
+	
+	<!-- Widget heading -->
+	<div class="widget-head">
+		<h4 class="heading">Condensed Table</h4>
+	</div>
+	<!-- // Widget heading END -->
+	
+	<div class="widget-body">
+	
+		<!-- Table -->
+		<table class="table table-bordered table-condensed">
+			
+			<!-- Table heading -->
+			<thead>
+				<tr>
+					<th class="center">No.</th>
+					<th>Name</th>
+					<th>Location</th>
+					<th>Position</th>
+					<th class="center">Rating</th>
+					<th class="center">Progress</th>
+					<th class="text-right">Action</th>
+				</tr>
+			</thead>
+			<!-- // Table heading END -->
+			
+			<!-- Table body -->
+			<tbody>
+				
+				
+				<!-- Table row -->
+				<tr>
+					<td class="center">1</td>
+					<td> <img src="../assets//images/people/35/8.jpg" width="20" class="img-circle"/> <span >Adrian Demian</span></td>
+					<td>MI, USA </td>
+					<td>Senior UI Designer</td>
+					<td class="center"><div class="rating text-faded">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star active"></span>
+        <span class="star"></span>
+</div>  
+
+
+</td>
+					<td class="center innerLR">
+						<div class="progress progress-mini">
+							<div class="progress-bar progress-bar-primary" style="width: 75%;"></div>
+						</div>
+					</td>
+					<td class="text-right">
+						<div class="btn-group btn-group-xs ">
+							<a href="" class="btn btn-inverse"><i class="fa fa-pencil"></i></a>
+							<a href="" class="btn btn-danger"><i class="fa fa-times"></i></a>
+
+						</div>
+					</td>
+				</tr>
+				<!-- // Table row END -->
+
+			</tbody>
+			<!-- // Table body END -->
+		</table>
+		<!-- // Table END -->
+		
+	</div>
+</div>
+<!-- // Widget END -->
+
+<!-- Widget -->
+<div class="widget widget-inverse">
+	
+	<!-- Widget heading -->
+	<div class="widget-head">
+		<h4 class="heading">Striped Table</h4>
+	</div>
+	<!-- // Widget heading END -->
+	
+	<div class="widget-body" >
+	
+		<!-- Table -->
+		<table class="table table-bordered table-striped table-white">
+			
+			<!-- Table heading -->
+			<thead>
+				<tr>
+					<th class="center">No.</th>
+					<th>Name</th>
+					<th>Location</th>
+					<th>Position</th>
+					<th class="center">Rating</th>
+					<th class="center">Progress</th>
+					<th class="text-right">Action</th>
+				</tr>
+			</thead>
+			<!-- // Table heading END -->
+			
+			<!-- Table body -->
+			<tbody>
+				
+				
+				<!-- Table row -->
+				<tr>
+					<td class="center">1</td>
+					<td> <img src="../assets//images/people/35/8.jpg" width="20" class="img-circle"/> <span >Adrian Demian</span></td>
+					<td>MI, USA </td>
+					<td>Senior UI Designer</td>
+					<td class="center"><div class="rating text-faded">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star active"></span>
+        <span class="star"></span>
+</div>  
+
+
+</td>
+					<td class="center">
+						<div class="progress progress-mini">
+							<div class="progress-bar progress-bar-primary" style="width: 75%;"></div>
+						</div>
+					</td>
+					<td class="text-right">
+						<div class="btn-group btn-group-xs ">
+							<a href="" class="btn btn-inverse"><i class="fa fa-pencil"></i></a>
+							<a href="" class="btn btn-danger"><i class="fa fa-times"></i></a>
+
+						</div>
+					</td>
+				</tr>
+				<!-- // Table row END -->
+					
+				<!-- Table row -->
+				<tr>
+					<td class="center">1</td>
+					<td> <img src="../assets//images/people/35/8.jpg" width="20" class="img-circle"/> <span >Adrian Demian</span></td>
+					<td>MI, USA </td>
+					<td>Senior UI Designer</td>
+					<td class="center"><div class="rating text-faded">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star active"></span>
+        <span class="star"></span>
+</div>  
+
+
+</td>
+					<td class="center">
+						<div class="progress progress-mini">
+							<div class="progress-bar progress-bar-primary" style="width: 75%;"></div>
+						</div>
+					</td>
+					<td class="text-right">
+						<div class="btn-group btn-group-xs ">
+							<a href="" class="btn btn-inverse"><i class="fa fa-pencil"></i></a>
+							<a href="" class="btn btn-danger"><i class="fa fa-times"></i></a>
+
+						</div>
+					</td>
+				</tr>
+				<!-- // Table row END -->
+
+			</tbody>
+			<!-- // Table body END -->
+			
+		</table>
+		<!-- // Table END -->
+		
+	</div>
+</div>
+<!-- // Widget END -->
+
+											</div>
+											<div class="tab-pane" id="source-a423db146c064e69be97275754264dbb">
+												<pre class="prettyprint">&lt;h3&gt;Classic Tables&lt;/h3&gt;
+
+&lt;!-- Widget --&gt;
+&lt;div class=&quot;widget widget-inverse&quot;&gt;
+	
+	&lt;!-- Widget heading --&gt;
+	&lt;div class=&quot;widget-head&quot;&gt;
+		&lt;h4 class=&quot;heading&quot;&gt;Minimal Table&lt;/h4&gt;
+	&lt;/div&gt;
+	&lt;!-- // Widget heading END --&gt;
+	
+	&lt;div class=&quot;widget-body&quot;&gt;
+	
+		&lt;!-- Table --&gt;
+		&lt;table class=&quot;table table-condensed&quot;&gt;
+		
+			&lt;!-- Table heading --&gt;
+			&lt;thead&gt;
+				&lt;tr&gt;
+					&lt;th class=&quot;center&quot;&gt;No.&lt;/th&gt;
+					&lt;th&gt;Name&lt;/th&gt;
+					&lt;th&gt;Location&lt;/th&gt;
+					&lt;th&gt;Position&lt;/th&gt;
+					&lt;th class=&quot;center&quot;&gt;Rating&lt;/th&gt;
+					&lt;th class=&quot;center&quot;&gt;Progress&lt;/th&gt;
+					&lt;th class=&quot;text-right&quot;&gt;Action&lt;/th&gt;
+				&lt;/tr&gt;
+			&lt;/thead&gt;
+			&lt;!-- // Table heading END --&gt;
+			
+			&lt;!-- Table body --&gt;
+			&lt;tbody&gt;
+				
+
+				&lt;!-- Table row --&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;center&quot;&gt;1&lt;/td&gt;
+					&lt;td&gt; &lt;img src=&quot;../assets//images/people/35/8.jpg&quot; width=&quot;20&quot; class=&quot;img-circle&quot;/&gt; &lt;span &gt;Adrian Demian&lt;/span&gt;&lt;/td&gt;
+					&lt;td&gt;MI, USA &lt;/td&gt;
+					&lt;td&gt;Senior UI Designer&lt;/td&gt;
+					&lt;td class=&quot;center&quot;&gt;&lt;div class=&quot;rating text-faded&quot;&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star active&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;  
+
+
+&lt;/td&gt;
+					&lt;td class=&quot;center innerLR&quot;&gt;
+						&lt;div class=&quot;progress progress-mini&quot;&gt;
+							&lt;div class=&quot;progress-bar progress-bar-primary&quot; style=&quot;width: 75%;&quot;&gt;&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;text-right&quot;&gt;
+						&lt;div class=&quot;btn-group btn-group-xs &quot;&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-inverse&quot;&gt;&lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-danger&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+						&lt;/div&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;!-- // Table row END --&gt;
+
+			&lt;/tbody&gt;
+			&lt;!-- // Table body END --&gt;
+			
+		&lt;/table&gt;
+		&lt;!-- // Table END --&gt;
+		
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // Widget END --&gt;
+
+&lt;!-- Widget --&gt;
+&lt;div class=&quot;widget widget-inverse&quot;&gt;
+	
+	&lt;!-- Widget heading --&gt;
+	&lt;div class=&quot;widget-head&quot;&gt;
+		&lt;h4 class=&quot;heading&quot;&gt;Bordered Table&lt;/h4&gt;
+	&lt;/div&gt;
+	&lt;!-- // Widget heading END --&gt;
+	
+	&lt;div class=&quot;widget-body&quot; &gt;
+	
+		&lt;!-- Table --&gt;
+		&lt;table class=&quot;table table-bordered table-white&quot;&gt;
+			
+			&lt;!-- Table heading --&gt;
+			&lt;thead&gt;
+				&lt;tr&gt;
+					&lt;th class=&quot;center&quot;&gt;No.&lt;/th&gt;
+					&lt;th&gt;Name&lt;/th&gt;
+					&lt;th&gt;Location&lt;/th&gt;
+					&lt;th&gt;Position&lt;/th&gt;
+					&lt;th class=&quot;center&quot;&gt;Rating&lt;/th&gt;
+					&lt;th class=&quot;center&quot;&gt;Progress&lt;/th&gt;
+					&lt;th class=&quot;text-right&quot;&gt;Action&lt;/th&gt;
+				&lt;/tr&gt;
+			&lt;/thead&gt;
+			&lt;!-- // Table heading END --&gt;
+			
+			&lt;!-- Table body --&gt;
+			&lt;tbody&gt;
+				
+				
+				&lt;!-- Table row --&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;center&quot;&gt;1&lt;/td&gt;
+					&lt;td&gt; &lt;img src=&quot;../assets//images/people/35/8.jpg&quot; width=&quot;20&quot; class=&quot;img-circle&quot;/&gt; &lt;span &gt;Adrian Demian&lt;/span&gt;&lt;/td&gt;
+					&lt;td&gt;MI, USA &lt;/td&gt;
+					&lt;td&gt;Senior UI Designer&lt;/td&gt;
+					&lt;td class=&quot;center&quot;&gt;&lt;div class=&quot;rating text-faded&quot;&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star active&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;  
+
+
+&lt;/td&gt;
+					&lt;td class=&quot;center innerLR&quot;&gt;
+						&lt;div class=&quot;progress progress-mini&quot;&gt;
+							&lt;div class=&quot;progress-bar progress-bar-primary&quot; style=&quot;width: 75%;&quot;&gt;&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;text-right&quot;&gt;
+						&lt;div class=&quot;btn-group btn-group-xs &quot;&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-inverse&quot;&gt;&lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-danger&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+						&lt;/div&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;!-- // Table row END --&gt;
+
+			&lt;/tbody&gt;
+			&lt;!-- // Table body END --&gt;
+			
+		&lt;/table&gt;
+		&lt;!-- // Table END --&gt;
+		
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // Widget END --&gt;
+
+&lt;!-- Widget --&gt;
+&lt;div class=&quot;widget widget-inverse&quot;&gt;
+	
+	&lt;!-- Widget heading --&gt;
+	&lt;div class=&quot;widget-head&quot;&gt;
+		&lt;h4 class=&quot;heading&quot;&gt;Condensed Table&lt;/h4&gt;
+	&lt;/div&gt;
+	&lt;!-- // Widget heading END --&gt;
+	
+	&lt;div class=&quot;widget-body&quot;&gt;
+	
+		&lt;!-- Table --&gt;
+		&lt;table class=&quot;table table-bordered table-condensed&quot;&gt;
+			
+			&lt;!-- Table heading --&gt;
+			&lt;thead&gt;
+				&lt;tr&gt;
+					&lt;th class=&quot;center&quot;&gt;No.&lt;/th&gt;
+					&lt;th&gt;Name&lt;/th&gt;
+					&lt;th&gt;Location&lt;/th&gt;
+					&lt;th&gt;Position&lt;/th&gt;
+					&lt;th class=&quot;center&quot;&gt;Rating&lt;/th&gt;
+					&lt;th class=&quot;center&quot;&gt;Progress&lt;/th&gt;
+					&lt;th class=&quot;text-right&quot;&gt;Action&lt;/th&gt;
+				&lt;/tr&gt;
+			&lt;/thead&gt;
+			&lt;!-- // Table heading END --&gt;
+			
+			&lt;!-- Table body --&gt;
+			&lt;tbody&gt;
+				
+				
+				&lt;!-- Table row --&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;center&quot;&gt;1&lt;/td&gt;
+					&lt;td&gt; &lt;img src=&quot;../assets//images/people/35/8.jpg&quot; width=&quot;20&quot; class=&quot;img-circle&quot;/&gt; &lt;span &gt;Adrian Demian&lt;/span&gt;&lt;/td&gt;
+					&lt;td&gt;MI, USA &lt;/td&gt;
+					&lt;td&gt;Senior UI Designer&lt;/td&gt;
+					&lt;td class=&quot;center&quot;&gt;&lt;div class=&quot;rating text-faded&quot;&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star active&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;  
+
+
+&lt;/td&gt;
+					&lt;td class=&quot;center innerLR&quot;&gt;
+						&lt;div class=&quot;progress progress-mini&quot;&gt;
+							&lt;div class=&quot;progress-bar progress-bar-primary&quot; style=&quot;width: 75%;&quot;&gt;&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;text-right&quot;&gt;
+						&lt;div class=&quot;btn-group btn-group-xs &quot;&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-inverse&quot;&gt;&lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-danger&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+						&lt;/div&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;!-- // Table row END --&gt;
+
+			&lt;/tbody&gt;
+			&lt;!-- // Table body END --&gt;
+		&lt;/table&gt;
+		&lt;!-- // Table END --&gt;
+		
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // Widget END --&gt;
+
+&lt;!-- Widget --&gt;
+&lt;div class=&quot;widget widget-inverse&quot;&gt;
+	
+	&lt;!-- Widget heading --&gt;
+	&lt;div class=&quot;widget-head&quot;&gt;
+		&lt;h4 class=&quot;heading&quot;&gt;Striped Table&lt;/h4&gt;
+	&lt;/div&gt;
+	&lt;!-- // Widget heading END --&gt;
+	
+	&lt;div class=&quot;widget-body&quot; &gt;
+	
+		&lt;!-- Table --&gt;
+		&lt;table class=&quot;table table-bordered table-striped table-white&quot;&gt;
+			
+			&lt;!-- Table heading --&gt;
+			&lt;thead&gt;
+				&lt;tr&gt;
+					&lt;th class=&quot;center&quot;&gt;No.&lt;/th&gt;
+					&lt;th&gt;Name&lt;/th&gt;
+					&lt;th&gt;Location&lt;/th&gt;
+					&lt;th&gt;Position&lt;/th&gt;
+					&lt;th class=&quot;center&quot;&gt;Rating&lt;/th&gt;
+					&lt;th class=&quot;center&quot;&gt;Progress&lt;/th&gt;
+					&lt;th class=&quot;text-right&quot;&gt;Action&lt;/th&gt;
+				&lt;/tr&gt;
+			&lt;/thead&gt;
+			&lt;!-- // Table heading END --&gt;
+			
+			&lt;!-- Table body --&gt;
+			&lt;tbody&gt;
+				
+				
+				&lt;!-- Table row --&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;center&quot;&gt;1&lt;/td&gt;
+					&lt;td&gt; &lt;img src=&quot;../assets//images/people/35/8.jpg&quot; width=&quot;20&quot; class=&quot;img-circle&quot;/&gt; &lt;span &gt;Adrian Demian&lt;/span&gt;&lt;/td&gt;
+					&lt;td&gt;MI, USA &lt;/td&gt;
+					&lt;td&gt;Senior UI Designer&lt;/td&gt;
+					&lt;td class=&quot;center&quot;&gt;&lt;div class=&quot;rating text-faded&quot;&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star active&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;  
+
+
+&lt;/td&gt;
+					&lt;td class=&quot;center&quot;&gt;
+						&lt;div class=&quot;progress progress-mini&quot;&gt;
+							&lt;div class=&quot;progress-bar progress-bar-primary&quot; style=&quot;width: 75%;&quot;&gt;&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;text-right&quot;&gt;
+						&lt;div class=&quot;btn-group btn-group-xs &quot;&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-inverse&quot;&gt;&lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-danger&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+						&lt;/div&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;!-- // Table row END --&gt;
+					
+				&lt;!-- Table row --&gt;
+				&lt;tr&gt;
+					&lt;td class=&quot;center&quot;&gt;1&lt;/td&gt;
+					&lt;td&gt; &lt;img src=&quot;../assets//images/people/35/8.jpg&quot; width=&quot;20&quot; class=&quot;img-circle&quot;/&gt; &lt;span &gt;Adrian Demian&lt;/span&gt;&lt;/td&gt;
+					&lt;td&gt;MI, USA &lt;/td&gt;
+					&lt;td&gt;Senior UI Designer&lt;/td&gt;
+					&lt;td class=&quot;center&quot;&gt;&lt;div class=&quot;rating text-faded&quot;&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star active&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;star&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;  
+
+
+&lt;/td&gt;
+					&lt;td class=&quot;center&quot;&gt;
+						&lt;div class=&quot;progress progress-mini&quot;&gt;
+							&lt;div class=&quot;progress-bar progress-bar-primary&quot; style=&quot;width: 75%;&quot;&gt;&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;text-right&quot;&gt;
+						&lt;div class=&quot;btn-group btn-group-xs &quot;&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-inverse&quot;&gt;&lt;i class=&quot;fa fa-pencil&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;a href=&quot;&quot; class=&quot;btn btn-danger&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+						&lt;/div&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;!-- // Table row END --&gt;
+
+			&lt;/tbody&gt;
+			&lt;!-- // Table body END --&gt;
+			
+		&lt;/table&gt;
+		&lt;!-- // Table END --&gt;
+		
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // Widget END --&gt;
+
+</pre>
+											</div>
+
+																						<div class="tab-pane" id="styles-a423db146c064e69be97275754264dbb">
+
+												<h4>Code</h4>
+												<pre class="prettyprint">@import &quot;http://localhost/shared/components/modules/admin/ratings/assets/less/rating.less&quot;;
+@import &quot;assets/components/core/less/widgets.less&quot;;
+@import &quot;assets/components/modules/admin/tables/classic/assets/less/tables.less&quot;;
+@import &quot;http://localhost/shared/components/library/jquery-ui/css/jquery-ui.min.css&quot;;</pre>
+												<hr class="separator"/>
+
+												<h4>Usage</h4>
+												<ol>
+													<li>Create a new LESS file <em>(eg. styles.less)</em></li>
+													<li>Copy &amp; paste the above imports in the LESS file.</li>
+													<li>Place the file in your project's document root.</li>
+													<li>
+														Load the LESS file into the <code>&lt;head&gt;</code> section of your HTML document, before any JavaScript files: <p><pre class="prettyprint">&lt;link type=&quot;stylesheet/less&quot; href=&quot;styles.less&quot; /&gt;</pre>
+</p>
+														<p><span class="label label-danger">NOTE</span>&nbsp; All the styles from the CORE package also need to be imported in this file, before the component imports.</p>													</li>
+													<li>If you'd like to include other components on the same page, don't create multiple LESS files, but add all the imports in one file. You can create a LESS file for each page with just the resources used for that specific page, or you could create and use a single LESS file for the entire project.</li>
+													<li>In production, compile the LESS file and use the resulting minified CSS file in the HTML document.</li>
+												</ol>
+
+											</div>
+											
+																						<div class="tab-pane" id="scripts-a423db146c064e69be97275754264dbb">
+
+																									
+													<h3>Scripts</h3>
+													<p><span class="label label-default">HEAD</span> You should include the following scripts in the head section of the document, right before the closing <code>&lt;/head&gt;</code> tag, after styles.</p>
+
+													<pre class="prettyprint">&lt;script src=&quot;assets/components/library/jquery-ui/js/jquery-ui.min.js?v=v1.2.3&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/components/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js?v=v1.2.3&quot;&gt;&lt;/script&gt;</pre>
+													
+													<h3>Scripts</h3>
+													<p><span class="label label-default">BODY</span> You should include the following scripts at the end of the HTML document, right before the closing <code>&lt;/body&gt;</code> tag.</p>
+
+													<pre class="prettyprint">&lt;script src=&quot;assets/components/modules/admin/tables/classic/assets/js/tables-classic.init.js?v=v1.2.3&quot;&gt;&lt;/script&gt;</pre>
+
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="separator bottom"></div>
+							</div>
+										</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+	<!-- Global -->
+	<script>
+	var basePath = '',
+		commonPath = '../assets/',
+		rootPath = '../',
+		DEV = false,
+		componentsPath = '../assets/components/';
+	
+	var primaryColor = '#cb4040',
+		dangerColor = '#b55151',
+		successColor = '#8baf46',
+		warningColor = '#ab7a4b',
+		inverseColor = '#45484d';
+	
+	var themerPrimaryColor = primaryColor;
+	</script>
+
+	<script src="../assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/slimscroll/jquery.slimscroll.js?v=v1.2.3"></script>
+<script src="../assets/components/modules/admin/tables/classic/assets/js/tables-classic.init.js?v=v1.2.3"></script>
+<script src="../assets/components/modules/docs/docs/assets/angular/app/ng.app.js?v=v1.2.3"></script>
+<script src="../assets/components/modules/docs/assets/angular/filters/ng.filter.isarray.js?v=v1.2.3"></script>
+<script src="../assets/components/modules/docs/assets/angular/controllers/ng.ctrl.components.js?v=v1.2.3"></script>
+<script src="../assets/components/modules/docs/docs/assets/angular/directives/ng.docs.directive.components.js?v=v1.2.3"></script>
+<script src="../assets/components/plugins/prettyprint/assets/js/prettify.js?v=v1.2.3"></script>
+<script src="../assets/components/core/js/core.init.js?v=v1.2.3"></script>
+</body>
+</html>
