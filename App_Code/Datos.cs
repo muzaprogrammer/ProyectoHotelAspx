@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 /// </summary>
 public static class Datos
 {
-    static public string cadena = @"Data Source=PROGRAMMERPC;Initial Catalog=HOTEL;Integrated Security=True";
+    static public string cadena = @"Data Source=.;Initial Catalog=HOTEL;Integrated Security=True";
     static private string consulta = "";
     static private SqlConnection cn = new SqlConnection(cadena);
     static private SqlCommand cmd;
